@@ -75,7 +75,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE. -->
         </div>
         <div v-else>
           <h1 class="title">Welcome to {{ appName }}</h1>
-          <h2 class="subtitle">Pronounced 'Eris' — the Enigmatic Reduced [UR]Identifier Service.</h2>
+          <h2 class="subtitle">Pronounced 'Eris' — the Epigrammatic Resource Identifier Service.</h2>
           <p v-if="linkNotFound">
             We're sorry, that link could not be found.
             <a v-bind:href="signUpUrl">Sign up</a> or

@@ -22,6 +22,7 @@ import moment from 'moment'
 require('./assets/main.scss')
 
 Vue.config.productionTip = false
+Vue.config.devtools = true
 
 // filters
 Vue.filter('formatDate', function (value) {

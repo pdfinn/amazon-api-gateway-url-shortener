@@ -57,7 +57,7 @@ Resources:
   SiteAPI:
     Type: AWS::Serverless::Api
     Properties:
-      StageName: Prod
+      StageName: Dev
       EndpointConfiguration: REGIONAL
       TracingEnabled: true
       MethodSettings:
@@ -182,7 +182,7 @@ Resources:
               OriginProtocolPolicy: https-only
             DomainName: !Sub ${SiteAPI}.execute-api.${AWS::Region}.amazonaws.com
             Id: "URLShortenerAPIGW"
-            OriginPath: /Prod
+            OriginPath: /Dev
 
   ##   CloudFront access logs storage
   CloudFrontAccessLogsBucket:
